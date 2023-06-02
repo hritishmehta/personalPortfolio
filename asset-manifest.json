@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/personalPortfolio/static/css/main.6f0d4022.css",
+    "main.js": "/personalPortfolio/static/js/main.1ce548e0.js",
+    "static/media/instagram.png": "/personalPortfolio/static/media/instagram.88f88e4e58cd4b9b602d.png",
+    "static/media/reactLogo.png": "/personalPortfolio/static/media/reactLogo.8a6fc0a24a800d1e0f4a.png",
+    "static/media/mountain.jpg": "/personalPortfolio/static/media/mountain.66d5e19fb613550d610b.jpg",
+    "static/media/professionalPortrait.jpg": "/personalPortfolio/static/media/professionalPortrait.6e2338036e09f6eaad9e.jpg",
+    "static/media/HritishResume.pdf": "/personalPortfolio/static/media/HritishResume.baeeb953234c8ed2888f.pdf",
+    "static/media/cLanguage.jpg": "/personalPortfolio/static/media/cLanguage.8dddc7e73d1e65c9d1a6.jpg",
+    "static/media/naruto.png": "/personalPortfolio/static/media/naruto.30b15169d404be772eb8.png",
+    "static/media/basketball.png": "/personalPortfolio/static/media/basketball.a0ef1352d36a53ed7f9e.png",
+    "static/media/cssLogo.png": "/personalPortfolio/static/media/cssLogo.4e67641bb68b658d9b2b.png",
+    "static/media/github.png": "/personalPortfolio/static/media/github.873a4ccb8c31f7bda25f.png",
+    "static/media/javaScriptLogo.png": "/personalPortfolio/static/media/javaScriptLogo.ec1c0379d0e87cc38946.png",
+    "static/media/LinkedIn.png": "/personalPortfolio/static/media/LinkedIn.f1d668322dd800064ae5.png",
+    "static/media/java.png": "/personalPortfolio/static/media/java.d5282edccb8dfd302e51.png",
+    "index.html": "/personalPortfolio/index.html",
+    "static/media/contactform.php": "/personalPortfolio/static/media/contactform.a0ee57dd131b513e608c.php",
+    "main.6f0d4022.css.map": "/personalPortfolio/static/css/main.6f0d4022.css.map",
+    "main.1ce548e0.js.map": "/personalPortfolio/static/js/main.1ce548e0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f0d4022.css",
+    "static/js/main.1ce548e0.js"
+  ]
+}
