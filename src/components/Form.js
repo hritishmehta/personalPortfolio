@@ -1,11 +1,10 @@
 import React from 'react';
-import php from '../auxilary/contactform.php'
 
 function Form() {
   return (
     <div>
       <form
-        action={php}
+        action='./contactform.php'
         className="flex flex-col items-center pb-8"
         method="post"
       >
