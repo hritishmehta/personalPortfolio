@@ -1,11 +1,17 @@
 import React from 'react';
 
-const Project = ({ title, description, link }) => {
+const Project = ({ title, description,technologies, link }) => {
   return (
-    <div className="bg-white rounded-lg shadow-md p-6 mb-4">
-      <h2 className="text-xl font-bold mb-2">{title}</h2>
-      <p className="text-gray-700 mb-4">{description}</p>
-      <a href={link} className="text-blue-500 hover:underline">View Project</a>
+    <div className="bg-teal-400 rounded-lg shadow-md p-6 mb-4">
+      <h2 className="text-2xl text-white font-bold font-roboto mb-2">{title}</h2>
+      <p className=" font-roboto text-white mb-4">{description}</p>
+      <p className="font-roboto text-white mb-4">{technologies}</p>      
+      <a
+        href={link}
+        className="font-roboto text-white font-bold hover:underline hover:text-teal-200 transition-colors"
+      >
+        View Project
+      </a>
     </div>
   );
 };

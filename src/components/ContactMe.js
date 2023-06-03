@@ -26,9 +26,9 @@ function ContactMe(){
 
     ]
     return(
-        <div className="pt-4 min-w-screen min-h-screen">
+        <div className="pt-20 min-w-screen min-h-screen ">
             <div className="flex flex-col">
-                <h2 className="text-center text-2xl font-bold">Contact Me</h2>
+                <h1 className="text-center text-3xl font-bold font-roboto">Contact Me</h1>
                 <form>
                     <div className="form-outline mb-4">
                         <label className="form-label"></label>

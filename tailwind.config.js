@@ -8,7 +8,8 @@ module.exports = {
       fontFamily:{
         playfair: ['Playfair'],
         combo: ['Combo-Regular'],
-        amagro: ['Amagro']
+        amagro: ['Amagro'],
+        roboto:['Roboto']
       }
     },
   },

@@ -1,5 +1,6 @@
 import React from 'react';
 import HritishResume from '../pdfs/HritishResume.pdf';
+import { Link } from 'react-scroll';
 
 function Navbar({ scrollToSection }) {
   const handleScroll = (id) => {
@@ -10,19 +11,41 @@ function Navbar({ scrollToSection }) {
     <nav className="bg-black text-teal-200">
       <div className="container mx-auto flex items-center justify-between p-4">
         <div className="flex space-x-4">
-          <button className="hover:text-blue-300" onClick={() => handleScroll('home')}>
+          <Link
+            className="hover:text-blue-300 font-roboto"
+            to="home"
+            smooth={true}
+            duration={500}
+          >
             Home
-          </button>
-          <button className="hover:text-blue-300" onClick={() => handleScroll('about')}>
+          </Link>
+          <Link
+            className="hover:text-blue-300 font-roboto"
+            to="about"
+            smooth={true}
+            duration={500}
+          >
             About Me
-          </button>
-          <button className="hover:text-blue-300" onClick={() => handleScroll('projects')}>
+          </Link>
+          <Link
+            className="hover:text-blue-300 font-roboto"
+            to="projects"
+            smooth={true}
+            duration={500}
+          >
             Projects
-          </button>
-          <a href={HritishResume} className="hover:text-blue-300">Resume</a>
-          <button className="hover:text-blue-300" onClick={() => handleScroll('contact')}>
+          </Link>
+          <a href={HritishResume} className="hover:text-blue-300 font-roboto">
+            Resume
+          </a>
+          <Link
+            className="hover:text-blue-300 font-roboto"
+            to="contact"
+            smooth={true}
+            duration={500}
+          >
             Contact Me
-          </button>
+          </Link>
         </div>
       </div>
     </nav>

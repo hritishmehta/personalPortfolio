@@ -6,8 +6,10 @@ import HomePage from './components/HomePage';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import NavBar from './components/NavBar';
+import { useNavigate, useLocation } from 'react-router-dom';
 
 function App() {
+
   const scrollRefs = {
     home: useRef(null),
     about: useRef(null),
@@ -37,34 +39,43 @@ function App() {
     };
   }, []);
 
+
   const scrollToSection = (id) => {
     const element = scrollRefs[id].current;
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    };
 
   return (
-    <div id='root'>
+    <div id="root">
       <div ref={headerRef}>
         <Header />
       </div>
-      <div className={`fixed top-0 left-0 right-0 w-full z-50 ${navbarFixed ? 'transform translate-y-0' : 'transform translate-y-full'}`} style={{ transition: 'transform 0.5s ease' }}>
-        <NavBar scrollToSection={scrollToSection} />
+      <div
+        className={`fixed top-0 left-0 right-0 w-full z-50 ${
+          navbarFixed ? 'transform translate-y-0' : 'transform translate-y-full'
+        }`}
+        style={{ transition: 'transform 0.5s ease' }}
+      >
+        <NavBar scrollToSection={scrollToSection}/>
       </div>
-      <div className={`${navbarFixed ? 'pt-15' : 'mt-15'}`} style={{ transition: 'padding-top 0.05s ease' }}>
-        <div ref={scrollRefs.home}>
-          <HomePage />
-        </div>
-        <div ref={scrollRefs.about}>
-          <AboutMe />
-        </div>
-        <div ref={scrollRefs.projects}>
-          <Projects />
-        </div>
-        <div ref={scrollRefs.contact}>
-          <ContactMe />
-        </div>
+      <div
+        className={`${navbarFixed ? 'pt-15' : 'mt-15'}`}
+        style={{ transition: 'padding-top 0.05s ease' }}
+      >
+            <div id='home' ref={scrollRefs.home} >
+              <HomePage />
+            </div>
+            <div id='about' ref={scrollRefs.about} >
+              <AboutMe />
+            </div>
+            <div id='projects' ref={scrollRefs.projects} >
+              <Projects />
+            </div>
+            <div id = 'contact' ref={scrollRefs.contact}>
+              <ContactMe/>
+            </div>
       </div>
     </div>
   );

@@ -19,12 +19,12 @@ function HomePage() {
   }, [index, fullText]);
 
   return (
-    <div className="bg-black min-h-screen flex items-center justify-center">
+    <div className="bg-black min-h-screen flex items-center justify-center ">
       <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4 text-teal-200">
+        <h1 className="text-4xl font-bold font-roboto mb-4 text-teal-200">
           <i>Hi! My name is Hritish Mehta</i>
         </h1>
-        <p className="text-2xl text-teal-200 font-combo">{text}</p>
+        <p className="text-2xl text-teal-200 font-roboto">{text}</p>
       </div>
     </div>
   );

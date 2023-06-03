@@ -46,40 +46,38 @@ function AboutMe() {
   ];
 
   return (
-    <div className="text-black">
-      <section className="flex items-center space-x-4 overflow-x-auto min-h-screen min-w-screen">
-        <img
-          src={professionalPortrait}
-          alt="Picture of Me"
-          className="object-contain max-h-96 pl-4 pt-8"
-        />
+    <div className="text-black bg-grey-100 pb-20 ">
+      <h1 className="text-3xl font-bold text-center pt-8 pb-4 font-roboto">
+            About Me
+          </h1>
+      <section className="flex items-center space-x-4 overflow-x-auto min-h-screen min-w-screen border-4 border-teal-400 rounded-lg shadow-lg p-2">
+          <img
+      src={professionalPortrait}
+      alt="Picture of Me"
+      className="object-cover w-96 h-96 rounded-full shadow-lg border-4 border-white hover:scale-105 transition-transform ml-8"
+    />
         <div className="mr-4 pt-6">
           <div>
-            <h2 className="text-2xl font-bold text-center pt-2 pb-4 font-combo">
-              About Me
-            </h2>
-            <div className="border-2 border-teal-800 rounded-lg px-3 py-2 mr-4">
-              <div className="flex justify-center">
-                <img src={basketball} alt="Basketball" className="max-w-32 max-h-32 object-scale-down" />
-                <img src={mountain} alt="Mountain" className="max-w-32 max-h-32 object-scale-down" 
-                />
-                <img src={naruto} alt="Naruto" className="max-w-32 max-h-32 object-scale-down"  />
-              </div>
-              <p className="pl-2 pr-0 pt-2 pb-2 text-center text-lg font-combo">
-                Hello! Welcome to my first attempt at web development. I am currently a
-                sophomore at <b>Rutgers University - New Brunswick</b> and am majoring in{' '}
-                <b>Computer Science</b> and <b>Economics</b> with a minor in{' '}
-                <b>Data Science</b>. I am a <b>passionate, competitive, and meticulous</b>{' '}
-                individual and enjoy spending my free time playing basketball, admiring
-                nature, and watching anime. As for career aspirations, I have an interest
-                in <b>Machine Learning, Web Development, and Artificial Intelligence</b>
-              </p>
+            <p className="pl-2 pr-0 pt-2 pb-2 text-left font-roboto sm:text-sm md:text-md lg:text-lg">
+              Hello! Welcome to my first attempt at web development. My name is Hritish Mehta and I am currently a
+              sophomore at <b>Rutgers University - New Brunswick</b> and am majoring in{' '}
+              <b>Computer Science</b> and <b>Economics</b> with a minor in{' '}
+              <b>Data Science</b>. I am a <b>passionate, competitive, and meticulous</b>{' '}
+              individual and enjoy spending my free time playing basketball, admiring
+              nature, and watching anime. As for career aspirations, I have an interest
+              in <b>Machine Learning, Web Development, and Artificial Intelligence</b>
+            </p>
+            <div className="flex justify-center pr-5">
+              <img src={basketball} alt="Basketball" className="max-w-32 max-h-32 object-scale-down" />
+              <img src={mountain} alt="Mountain" className="max-w-32 max-h-32 object-scale-down" 
+              />
+              <img src={naruto} alt="Naruto" className="max-w-32 max-h-32 object-scale-down"  />
             </div>
           </div>
         </div>
       </section>
       <section>
-        <h1 className="text-center text-bold text-3xl pt-12">
+        <h1 className="text-center text-bold text-3xl pt-12 font-roboto">
           <b>Proficient Technologies</b>
         </h1>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-8">
