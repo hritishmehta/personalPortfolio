@@ -5,6 +5,7 @@ import github from '../imgs/github.png';
 import SocialMedia from './SocialMedia';
 import Form from './Form';
 
+
 function ContactMe(){
 
     const socialMedias = [

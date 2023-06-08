@@ -1,7 +1,14 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 function Form() {
   const form = useRef();
+
+  const resetForm = () => {
+      form.current.reset();
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -33,14 +40,17 @@ function Form() {
     }
 
     // If all checks pass, send the email
-    emailjs.sendForm('service_sbfjv6p', 'template_pjkke8i', form.current, 'q4Z_dyXE49-uO-cB8')
+    emailjs
+      .sendForm('service_sbfjv6p', 'template_pjkke8i', form.current, 'q4Z_dyXE49-uO-cB8')
       .then((result) => {
-        console.log(result.text);
-        console.log("Message sent");
-      }, (error) => {
+        notify();
+        resetForm();
+      })
+      .catch((error) => {
         console.log(error.text);
       });
   };
+
 
   const validateEmail = (email) => {
     // Simple email validation regex
@@ -48,21 +58,46 @@ function Form() {
     return re.test(email);
   };
 
+  const notify = () => {
+    toast.success("Your message was sent!");
+  };
+
   return (
-    <form ref={form} onSubmit={sendEmail} className="flex flex-col items-center pb-8">
-    <div className="p-4">
-      <input type="text" name="user_name" className="bg-gray-200 rounded border p-2" placeholder="Your name" />
+    <div>
+      <form ref={form} className="flex flex-col items-center pb-8">
+        <div className="p-4">
+          <input
+            type="text"
+            name="user_name"
+            className="bg-gray-200 rounded border p-2"
+            placeholder="Your name"
+          />
+        </div>
+        <div className="p-4">
+          <input
+            type="email"
+            name="user_email"
+            className="bg-gray-200 rounded border p-2"
+            placeholder="Your email"
+          />
+        </div>
+        <div className="p-4 pb-8 flex flex-row items-center">
+          <textarea
+            name="message"
+            className="bg-gray-200 rounded border p-2 flex-grow"
+            placeholder="Your message"
+          />
+        </div>
+        <button
+          type="submit"
+          onClick={sendEmail}
+          className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded border border-teal-500"
+        >
+          Submit
+        </button>
+      </form>
+      <ToastContainer />
     </div>
-    <div className="p-4">
-      <input type="email" name="user_email" className="bg-gray-200 rounded border p-2" placeholder="Your email" />
-    </div>
-    <div className="p-4 pb-8 flex flex-row items-center">
-      <textarea name="message" className="bg-gray-200 rounded border p-2 flex-grow" placeholder="Your message" />
-    </div>
-    <button type="submit" className="bg-teal-500 hover:bg-teal-600 text-white font-semibold py-2 px-4 rounded border border-teal-500">
-      Submit
-    </button>
-  </form>
   );
 }
 

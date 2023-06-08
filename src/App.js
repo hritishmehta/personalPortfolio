@@ -6,7 +6,6 @@ import HomePage from './components/HomePage';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import NavBar from './components/NavBar';
-import { useNavigate, useLocation } from 'react-router-dom';
 
 function App() {
 
