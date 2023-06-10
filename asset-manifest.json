@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/static/css/main.8354c882.css",
-    "main.js": "/static/js/main.ddb16d11.js",
+    "main.js": "/static/js/main.a44b12ac.js",
     "static/media/instagram.png": "/static/media/instagram.88f88e4e58cd4b9b602d.png",
     "static/media/reactLogo.png": "/static/media/reactLogo.8a6fc0a24a800d1e0f4a.png",
     "static/media/mountain.jpg": "/static/media/mountain.66d5e19fb613550d610b.jpg",
     "static/media/professionalPortrait.jpg": "/static/media/professionalPortrait.6e2338036e09f6eaad9e.jpg",
-    "static/media/HritishResume.pdf": "/static/media/HritishResume.baeeb953234c8ed2888f.pdf",
+    "static/media/HritishResume.pdf": "/static/media/HritishResume.7011a11768d5ead70c3b.pdf",
     "static/media/cLanguage.jpg": "/static/media/cLanguage.8dddc7e73d1e65c9d1a6.jpg",
     "static/media/naruto.png": "/static/media/naruto.30b15169d404be772eb8.png",
     "static/media/basketball.png": "/static/media/basketball.a0ef1352d36a53ed7f9e.png",
@@ -17,10 +17,10 @@
     "static/media/java.png": "/static/media/java.d5282edccb8dfd302e51.png",
     "index.html": "/index.html",
     "main.8354c882.css.map": "/static/css/main.8354c882.css.map",
-    "main.ddb16d11.js.map": "/static/js/main.ddb16d11.js.map"
+    "main.a44b12ac.js.map": "/static/js/main.a44b12ac.js.map"
   },
   "entrypoints": [
     "static/css/main.8354c882.css",
-    "static/js/main.ddb16d11.js"
+    "static/js/main.a44b12ac.js"
   ]
 }
