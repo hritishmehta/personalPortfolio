@@ -80,7 +80,7 @@ function AboutMe() {
         <h1 className="text-center text-bold text-3xl pt-12 font-roboto">
           <b>Proficient Technologies</b>
         </h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 justify-center">
+        <div className="mr-4 ml-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 pt-8 justify-center">
                 {technologies.map((technology, index) => (
                   <TechStack
                     key={index}

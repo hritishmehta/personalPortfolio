@@ -22,7 +22,7 @@ function ContactMe(){
 
     ]
     return(
-        <div className="pt-20 min-w-screen">
+        <div className="pt-20 min-w-screen md:pt-45">
             <div className="flex flex-col">
                 <h1 className="text-center text-3xl font-bold font-roboto">Contact Me</h1>
                 <form>
