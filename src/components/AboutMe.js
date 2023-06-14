@@ -54,7 +54,7 @@ function AboutMe() {
          <img
                 src={professionalPortrait}
                 alt="Picture of Me"
-                className="object-cover w-40 md:w-64 rounded-lg shadow-lg border-4 border-white hover:scale-105 transition-transform pt-4"
+                className="object-cover w-40 md:w-64 rounded-lg shadow-lg hover:scale-105 transition-transform pt-6"
           />
         <div className="mr-4 pt-6">
           <div>
