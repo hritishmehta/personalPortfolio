@@ -10,11 +10,6 @@ function ContactMe(){
 
     const socialMedias = [
         {
-            image: instagram,
-            description: 'Instagram',
-            link: 'https://www.instagram.com/hritishmehta/'
-        },
-        {
             image: LinkedIn,
             description: 'LinkedIn',
             link: 'https://www.linkedin.com/in/hritish-mehta-33575a222'
@@ -27,7 +22,7 @@ function ContactMe(){
 
     ]
     return(
-        <div className="pt-20 min-w-screen min-h-screen ">
+        <div className="pt-20 min-w-screen">
             <div className="flex flex-col">
                 <h1 className="text-center text-3xl font-bold font-roboto">Contact Me</h1>
                 <form>
@@ -38,7 +33,7 @@ function ContactMe(){
                 </form>
                 <Form/>
             </div>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pl-4 pb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pl-4 pr-4 pb-4">
                 {
                     socialMedias.map((socialMedia, index) => (
                         <SocialMedia
