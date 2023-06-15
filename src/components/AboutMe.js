@@ -49,8 +49,8 @@ function AboutMe() {
     <div className="pb-20 min-h-screen min-w-screen">
       <h1 className="text-3xl fontSize-custom font-bold text-center pt-8 pb-4 ml-4 mr-4 font-roboto">
             About Me
-          </h1>
-      <section className="flex flex-col lg:flex-row max-w-full max-h-full items-center space-x-4 border-4 border-teal-400 rounded-lg shadow-lg mr-4 ml-4 lg:p-2">
+     </h1>
+      <section className="flex flex-col lg:flex-row max-w-full max-h-full items-center space-x-4 border-4 border-teal-400 rounded-lg shadow-lg mr-4 ml-4 p-4">
          <img
                 src={professionalPortrait}
                 alt="Picture of Me"
@@ -58,7 +58,7 @@ function AboutMe() {
           />
         <div className="mr-4 pt-6">
           <div>
-            <p className="text-xs md:text-lg p-2 text-center font-roboto">
+            <p className="text-md md:text-xl p-2 text-center font-roboto">
               Hello! Welcome to my first attempt at web development. My name is Hritish Mehta and I am currently a
               sophomore at <b>Rutgers University - New Brunswick</b> and am majoring in{' '}
               <b>Computer Science</b> and <b>Economics</b> with a minor in{' '}
