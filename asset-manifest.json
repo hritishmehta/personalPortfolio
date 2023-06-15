@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.07b3545d.css",
-    "main.js": "/static/js/main.e5e4984e.js",
+    "main.css": "/static/css/main.1cba32c3.css",
+    "main.js": "/static/js/main.118a5447.js",
     "static/media/instagram.png": "/static/media/instagram.88f88e4e58cd4b9b602d.png",
-    "static/media/reactLogo.png": "/static/media/reactLogo.8a6fc0a24a800d1e0f4a.png",
     "static/media/mountain.jpg": "/static/media/mountain.66d5e19fb613550d610b.jpg",
     "static/media/professionalPortrait.jpg": "/static/media/professionalPortrait.6e2338036e09f6eaad9e.jpg",
     "static/media/HritishResume.pdf": "/static/media/HritishResume.7011a11768d5ead70c3b.pdf",
     "static/media/cLanguage.jpg": "/static/media/cLanguage.8dddc7e73d1e65c9d1a6.jpg",
+    "static/media/reactLogo.png": "/static/media/reactLogo.15404743bfb3cd60f12a.png",
     "static/media/naruto.png": "/static/media/naruto.30b15169d404be772eb8.png",
     "static/media/basketball.png": "/static/media/basketball.a0ef1352d36a53ed7f9e.png",
     "static/media/cssLogo.png": "/static/media/cssLogo.4e67641bb68b658d9b2b.png",
@@ -16,11 +16,11 @@
     "static/media/LinkedIn.png": "/static/media/LinkedIn.f1d668322dd800064ae5.png",
     "static/media/java.png": "/static/media/java.d5282edccb8dfd302e51.png",
     "index.html": "/index.html",
-    "main.07b3545d.css.map": "/static/css/main.07b3545d.css.map",
-    "main.e5e4984e.js.map": "/static/js/main.e5e4984e.js.map"
+    "main.1cba32c3.css.map": "/static/css/main.1cba32c3.css.map",
+    "main.118a5447.js.map": "/static/js/main.118a5447.js.map"
   },
   "entrypoints": [
-    "static/css/main.07b3545d.css",
-    "static/js/main.e5e4984e.js"
+    "static/css/main.1cba32c3.css",
+    "static/js/main.118a5447.js"
   ]
 }
